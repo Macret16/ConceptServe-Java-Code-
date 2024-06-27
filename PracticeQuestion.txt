@@ -1,0 +1,31 @@
+
+You are required to develop an advanced calculator program in Java that supports basic and advanced arithmetic operations (+, -, *, /, %, sqrt, pow) on two numbers. The program should include the following features:
+
+Calculator Operations:
+
+1. Addition (+): Adds two numbers.
+   Subtraction (-): Subtracts the second number from the first.
+   Multiplication (*): Multiplies two numbers.
+   Division (/): Divides the first number by the second (handle division by zero gracefully).
+   Modulus (%): Computes the remainder of dividing the first number by the second.
+   Square Root (sqrt): Calculates the square root of a number.
+   Power (pow): Raises the first number to the power of the second.
+   Class Design:
+
+2. Create an abstract class Calculator with methods calculate(double num1, double num2) and displayResult() (to be implemented by subclasses).
+   Implement subclasses Addition, Subtraction, Multiplication, Division, Modulus, SquareRoot, and Power that inherit from Calculator and override the calculate() method to perform their respective operations.
+   Interface:
+
+3. Define an interface Operation with a method performOperation(double num1, double num2).
+   Exception Handling:
+
+4. Create custom checked exceptions DivisionByZeroException and InvalidOperationException to handle division by zero scenarios and invalid operations, respectively.
+   Collections:
+
+5. Use a LinkedList to maintain a history of calculations performed by the user. Implement methods to add a calculation to the history and display the history upon user request.
+   User Interaction:
+
+Note:--
+        Prompt the user to enter two numbers (support decimal inputs) and select an operation (+, -, *, /, %, sqrt, pow).
+        Instantiate the appropriate subclass based on the selected operation, calculate the result, add the calculation to the history, and display the result using the displayResult() method.
+        Provide an option for the user to view the calculation history.
